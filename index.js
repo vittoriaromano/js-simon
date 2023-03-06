@@ -3,14 +3,15 @@
 
 // funzione prompt  
 function prmpttNumber(){
-     //array of Usernumb  - con il ciclo non mi funziona
-     for (let i=0; i <5; i++){
-        numberUser.push(Number (prompt ('inserisci un numero visualizato')));
+     //array B
+    // for (let i=0; i <5; i++){
+    //      numberUser.push(Number (prompt ('inserisci un numero visualizato')));
 
-    }
-     
+    // }
     console.log(numberUser);
-    //comparare le due
+
+
+    //comparare array A con B
     let numbersEql = [];
     numbersEql  = arrRandom.filter((data) => numberUser.includes(data));//invece dell' if value.includes value2[i]
     console.log(numbersEql);
@@ -18,19 +19,42 @@ function prmpttNumber(){
 
 }
 
-//funzione rimuover arr A
+//funzione rimuovere array A
 function numerarr(){
       impNumb.innerHTML = ''
 }
 
 //MAIN
+
+
 let numberUser = [];
-
-
 
 setTimeout(prmpttNumber, 30000); //timer 30s prompt
 
 setTimeout(numerarr, 29000); // timer 2.9 s rimuover arr A
+
+
+
+//timer giocatore
+
+const sec = document.getElementById('titolo')
+
+let seconds = 30;
+
+const clock = setInterval(function(){
+    if(seconds === 0 ){
+        clearInterval(clock);
+        console.log('tempo scaduto')
+        
+    }else {
+        sec.innerHTML += seconds;
+        console.log(seconds);
+        sec.innerHTML = seconds;
+        seconds--;   
+    }
+}, 1000);
+
+
 
 
 //creare un array di numeri random che verranno visualizati nel dom. (A)

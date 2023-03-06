@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cont{
+    background-color: black;
+    color: white;
+    margin: 60px auto;
+    text-align: center;
+    border: 1px dashed black;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    padding-top: 12%;
+    
+
+}
+
+h2{
+    margin: 30px auto;
+    background-color: orange;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+p{
+    font-size: 1.5625rem;
+    padding-bottom: 30px;
+}
+
+#imp-numb{
+    font-size: 30px;
+    color: rgb(250, 114, 114);
+}
