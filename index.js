@@ -11,8 +11,8 @@ function prmpttNumber(){
      Number (prompt ('inserisci un numero visualizato')),]
 
     console.log(numberUser);
-    let numbersEql = [];
     //comparare le due
+    let numbersEql = [];
     numbersEql  = arrRandom.filter((data) => numberUser.includes(data));
     console.log(numbersEql);
     impNumb.innerHTML = ('Ti sei ricordato questi numeri; ' + numbersEql + '!')
@@ -27,9 +27,9 @@ function numerarr(){
 //MAIN
 let numberUser = [];
 
-setTimeout(prmpttNumber, 3000); //timer 30s prompt
+setTimeout(prmpttNumber, 30000); //timer 30s prompt
 
-setTimeout(numerarr, 2900); // timer 2.9 s rimuover arr A
+setTimeout(numerarr, 29000); // timer 2.9 s rimuover arr A
 
 
 //creare un array di numeri random che verranno visualizati nel dom. (A)
